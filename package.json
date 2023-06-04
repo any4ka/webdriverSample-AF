@@ -1,0 +1,29 @@
+{
+  "name": "webdriversample-af",
+  "version": "1.0.0",
+  "description": "Selenium/Webdriver Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/any4ka/webdriverSample-AF.git"
+  },
+  "author": "Anna Finch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/any4ka/webdriverSample-AF/issues"
+  },
+  "homepage": "https://github.com/any4ka/webdriverSample-AF#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chromedriver": "^114.0.1",
+    "mocha": "^10.2.0",
+    "properties-reader": "^2.2.0",
+    "selenium-webdriver": "^4.9.2"
+  },
+  "devDependencies": {
+    "es6-enum": "^1.1.0"
+  }
+}
