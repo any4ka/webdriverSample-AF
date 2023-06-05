@@ -1,1 +1,6 @@
 node_modules/
+.DS_Store
+allure-report/
+allure-results/
+myjsonfile.json
+allure-history/
