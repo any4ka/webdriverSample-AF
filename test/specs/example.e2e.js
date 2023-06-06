@@ -1,5 +1,6 @@
 const LoginPage = require('../pageobjects/example/login.page')
 const SecurePage = require('../pageobjects/example/secure.page')
+const cypressPage = require('../pageobjects/cypressExample/cypress.page')
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
@@ -10,6 +11,7 @@ describe('My Login application', () => {
         await expect(SecurePage.flashAlert).toHaveTextContaining(
             'You logged into a secure area!')
     })
+    
 })
 
 

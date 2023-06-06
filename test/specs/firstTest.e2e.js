@@ -1,9 +1,9 @@
-var assert = require("chai").assert;
-const ah = require("../common/actionsHelper");
+const CypressPage = require('../pageobjects/cypressExample/cypress.page')
 
-
-describe('First Selenium Tests', () => {
-    it('run through the cypress test site', async () => {
-
+describe('First webdriver.io test', () => {
+    it('check button text', async () => {
+        CypressPage.openURL();
+        await CypressPage.linkByFullText('Querying').click();
+        expect(await CypressPage.button.getText()).toHaveText('Button')
     })
 })

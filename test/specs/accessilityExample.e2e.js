@@ -11,15 +11,15 @@ describe('Accessibility Test', () => {
             }
         });
 
-        await client.url('https://example.cypress.io');
+        await client.url('https://www.jeep.com');
 
         const builder = new AxeBuilder({ client }).withTags('wcag2a');
         try {
             const results = await builder.analyze();
-            fs.writeFile('myjsonfile.json', results,
-             function(err) {
-                if (err) throw err;
-                console.log('complete');
+            fs.writeFile('myjsonfile.json', JSON.stringify(results),
+                function (err) {
+                    if (err) throw err;
+                    console.log('complete');
                 });
 
         } catch (e) {
